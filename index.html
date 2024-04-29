@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <header class="header-home">
+            <h1 class="title">Pokedex</h1>
+            <div class="logo">
+            <img src="./images/pokeball.png" class="logo" style="width: 50px;">
+            </div>
+            <div id="search">
+                <svg viewBox="0 0 420 60" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="bar"/>
+                    
+                    <g class="magnifier">
+                        <circle class="glass"/>
+                        <line class="handle" x1="32" y1="32" x2="44" y2="44"></line>
+                    </g>
+            
+                    <g class="sparks">
+                        <circle class="spark"/>
+                        <circle class="spark"/>
+                        <circle class="spark"/>
+                    </g>
+            
+                    <g class="burst pattern-one">
+                        <circle class="particle circle"/>
+                        <path class="particle triangle"/>
+                        <circle class="particle circle"/>
+                        <path class="particle plus"/>
+                        <rect class="particle rect"/>
+                        <path class="particle triangle"/>
+                    </g>
+                    <g class="burst pattern-two">
+                        <path class="particle plus"/>
+                        <circle class="particle circle"/>
+                        <path class="particle triangle"/>
+                        <rect class="particle rect"/>
+                        <circle class="particle circle"/>
+                        <path class="particle plus"/>
+                    </g>
+                    <g class="burst pattern-three">
+                        <circle class="particle circle"/>
+                        <rect class="particle rect"/>
+                        <path class="particle plus"/>
+                        <path class="particle triangle"/>
+                        <rect class="particle rect"/>
+                        <path class="particle plus"/>
+                    </g>
+                </svg>
+                <input type=search id="searchInput" placeholder="">
+            </div>
+            <div id="results">
+            </div>
+        </header>
+            <class="pokedex">
+                <ol id="pokedex"></ol>
+
+                <script src="index.js"></script> 
+                <script src="search.js"></script>
+            </div>
+    </main>
+</body>
+</html>
